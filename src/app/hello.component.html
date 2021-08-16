@@ -1,0 +1,33 @@
+<div *ngIf="state == 0">Waiting for parameters</div>
+<div *ngIf="state == 1">
+
+  <!--Section-->
+  <section class="card">
+    <!-- Default form register -->
+    <form (ngSubmit)="getVideo()">
+
+      <div class="text">Enter the details below in order to generate your video</div>
+      <br>
+      <!-- Parameters -->
+      <div *ngFor="let element of parameters; let i = index ">
+        <br>
+        <div class="text">{{element.key}}</div>
+        <input type="text" class="form-control" [(ngModel)]="results[i].val" [ngModelOptions]="{standalone: true}" />
+      </div>
+
+      <br>
+      <!-- Generate button -->
+      <button type="submit">Generate</button>
+      <br>
+    </form>
+    <!-- Default form register -->
+  </section>
+  <!--Section -->
+
+</div>
+
+<div *ngIf="state == 2">Waiting for video</div>
+
+
+
+<div *ngIf="state == 4">Error! Try later</div>

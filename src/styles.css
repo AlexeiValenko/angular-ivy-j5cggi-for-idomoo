@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(24, 115, 189);
+}
+input {
+  background-color: rgb(111, 151, 183);
+  color: white;
+  border-radius: 8px;
+  width: 385px;
+  height: 25px;
+  padding: 6px;
+  border: none;
+}
+input[type='text']:focus {
+  outline: none;
+}
+button {
+  border-radius: 8px;
+  float: right;
+  height: 35px;
+  width: 100px;
+  color: blue;
+  border: none;
+}
+.text {
+  color: white;
+  margin: 7px;
+}
+.card {
+  border-radius: 15px;
+  background-color: rgb(64, 117, 159);
+  padding: 30px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
